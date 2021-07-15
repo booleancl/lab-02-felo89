@@ -4,7 +4,7 @@
   "description": "## Módulo 2: Repaso de fundamentos de Javascript. Conocer la sintáxis fundamental de Javascript en un contexto de propósito general. ## Unidad 2: Precedencia, condicionales y loops",
   "main": "index.js",
   "scripts": {
-    "test": "jest --silent --watch",
+    "test": "jest --watch",
     "test:ci": "jest --runInBand"
   },
   "repository": {

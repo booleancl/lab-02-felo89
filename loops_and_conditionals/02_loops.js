@@ -2,17 +2,18 @@
 function replaceVowels(text, replace) {
   var result = ''
   var vowels = 'aeiou'
-  var letter 
+  var letter
+
   for(var i = 0; i < text.length; i++) {
-    letter = text[i].toLowerCase()
-    if(vowels.indexOf(letter) !== -1) {
-      result += replace
-    } else {
-      result += letter
-    }
+    letter = text[i]
+    isVowel = vowels.indexOf(letter.toLowerCase()) !== -1
+    
+    result += isVowel ? replace : letter
   }
+
   return result
 }
+
 // Ejempĺo con While y do While
 function isPalindrome(text) {
   var auxText = ''
@@ -30,7 +31,7 @@ function isPalindrome(text) {
   // } while(index >= 0)
 
   // ¿Todo bien aquí?
-  return auxText === text ? true : false
+  return auxText.toLocaleLowerCase() === text.toLocaleLowerCase()
 }
 
 module.exports = {
